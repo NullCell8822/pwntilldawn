@@ -1,0 +1,24 @@
+--server info
+Apache Tomcat/Coyote JSP engine 1.1	Apache Tomcat/7.0.56	port 8080
+8009/tcp  open  ajp13        Apache Jserv (Protocol v1.3)
+3306/tcp  open  mysql        MariaDB (unauthorized)
+80/tcp    open  http         Apache httpd 2.4.34 ((Win32) OpenSSL/1.0.2o PHP/5.6.38)	XAMPP
+21/tcp    open  ftp          FileZilla ftpd 0.9.41 beta
+
+--Windows info
+Computer name: HOLLYWOOD
+OS: Windows 7 Ultimate 7601 Service Pack 1 (Windows 7 Ultimate 6.1)
+
+--finger service
+Login: Admin         Name: Mail System Administrator
+
+--smtp service
+user: root
+
+--Jetty service
+Server: Jetty(8.1.16.v20140903)
+Apache ActiveMQ
+credentials admin:admin
+
+metasploit exploit: windows/http/apache_activemq_traversal_upload
+

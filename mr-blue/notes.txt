@@ -1,0 +1,5 @@
+--important info
+445/tcp   open  microsoft-ds   Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: WORKGROUP)
+
+--vulnerability
+this version is vulnerable to eternal blue exploit

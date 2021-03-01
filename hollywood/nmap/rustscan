@@ -1,0 +1,326 @@
+[1m[38;2;0;255;0m.[38;2;0;255;6m-[38;2;0;255;13m-[38;2;0;255;19m-[38;2;0;255;25m-[38;2;0;255;32m.[38;2;0;255;38m [38;2;0;255;45m.[38;2;0;255;51m-[38;2;0;255;57m.[38;2;0;255;64m [38;2;0;255;70m.[38;2;0;255;76m-[38;2;0;255;83m.[38;2;0;255;89m [38;2;0;255;96m.[38;2;0;255;102m-[38;2;0;255;108m-[38;2;0;255;115m-[38;2;0;255;121m-[38;2;0;255;127m.[38;2;0;255;134m.[38;2;0;255;140m-[38;2;0;255;147m-[38;2;0;255;153m-[38;2;0;255;159m.[38;2;0;255;166m [38;2;0;255;172m [38;2;0;255;178m.[38;2;0;255;185m-[38;2;0;255;191m-[38;2;0;255;198m-[38;2;0;255;204m-[38;2;0;255;210m.[38;2;0;255;217m [38;2;0;255;223m.[38;2;0;255;229m-[38;2;0;255;236m-[38;2;0;255;242m-[38;2;0;255;249m.[38;2;0;255;255m [38;2;0;249;255m [38;2;0;242;255m [38;2;0;236;255m.[38;2;0;230;255m-[38;2;0;223;255m-[38;2;0;217;255m.[38;2;0;210;255m [38;2;0;204;255m [38;2;0;198;255m.[38;2;0;191;255m-[38;2;0;185;255m.[38;2;0;179;255m [38;2;0;172;255m.[38;2;0;166;255m-[38;2;0;159;255m.[0m
+[38;2;0;255;0m|[38;2;0;255;6m [38;2;0;255;13m{[38;2;0;255;19m}[38;2;0;255;25m [38;2;0;255;32m [38;2;0;255;38m}[38;2;0;255;45m|[38;2;0;255;51m [38;2;0;255;57m{[38;2;0;255;64m [38;2;0;255;70m}[38;2;0;255;76m [38;2;0;255;83m|[38;2;0;255;89m{[38;2;0;255;96m [38;2;0;255;102m{[38;2;0;255;108m_[38;2;0;255;115m_[38;2;0;255;121m [38;2;0;255;127m{[38;2;0;255;134m_[38;2;0;255;140m [38;2;0;255;147m [38;2;0;255;153m [38;2;0;255;159m_[38;2;0;255;166m}[38;2;0;255;172m{[38;2;0;255;178m [38;2;0;255;185m{[38;2;0;255;191m_[38;2;0;255;198m_[38;2;0;255;204m [38;2;0;255;210m [38;2;0;255;217m/[38;2;0;255;223m [38;2;0;255;229m [38;2;0;255;236m_[38;2;0;255;242m_[38;2;0;255;249m_[38;2;0;255;255m}[38;2;0;249;255m [38;2;0;242;255m/[38;2;0;236;255m [38;2;0;230;255m{[38;2;0;223;255m}[38;2;0;217;255m [38;2;0;210;255m\[38;2;0;204;255m [38;2;0;198;255m|[38;2;0;191;255m [38;2;0;185;255m [38;2;0;179;255m`[38;2;0;172;255m|[38;2;0;166;255m [38;2;0;159;255m|[0m
+[38;2;0;255;0m|[38;2;0;255;6m [38;2;0;255;13m.[38;2;0;255;19m-[38;2;0;255;25m.[38;2;0;255;32m [38;2;0;255;38m\[38;2;0;255;45m|[38;2;0;255;51m [38;2;0;255;57m{[38;2;0;255;64m_[38;2;0;255;70m}[38;2;0;255;76m [38;2;0;255;83m|[38;2;0;255;89m.[38;2;0;255;96m-[38;2;0;255;102m.[38;2;0;255;108m_[38;2;0;255;115m}[38;2;0;255;121m [38;2;0;255;127m}[38;2;0;255;134m [38;2;0;255;140m|[38;2;0;255;147m [38;2;0;255;153m|[38;2;0;255;159m [38;2;0;255;166m [38;2;0;255;172m.[38;2;0;255;178m-[38;2;0;255;185m.[38;2;0;255;191m_[38;2;0;255;198m}[38;2;0;255;204m [38;2;0;255;210m}[38;2;0;255;217m\[38;2;0;255;223m [38;2;0;255;229m [38;2;0;255;236m [38;2;0;255;242m [38;2;0;255;249m [38;2;0;255;255m}[38;2;0;249;255m/[38;2;0;242;255m [38;2;0;236;255m [38;2;0;230;255m/[38;2;0;223;255m\[38;2;0;217;255m [38;2;0;210;255m [38;2;0;204;255m\[38;2;0;198;255m|[38;2;0;191;255m [38;2;0;185;255m|[38;2;0;179;255m\[38;2;0;172;255m [38;2;0;166;255m [38;2;0;159;255m|[0m
+[38;2;0;255;0m`[38;2;0;255;6m-[38;2;0;255;13m'[38;2;0;255;19m [38;2;0;255;25m`[38;2;0;255;32m-[38;2;0;255;38m'[38;2;0;255;45m`[38;2;0;255;51m-[38;2;0;255;57m-[38;2;0;255;64m-[38;2;0;255;70m-[38;2;0;255;76m-[38;2;0;255;83m'[38;2;0;255;89m`[38;2;0;255;96m-[38;2;0;255;102m-[38;2;0;255;108m-[38;2;0;255;115m-[38;2;0;255;121m'[38;2;0;255;127m [38;2;0;255;134m [38;2;0;255;140m`[38;2;0;255;147m-[38;2;0;255;153m'[38;2;0;255;159m [38;2;0;255;166m [38;2;0;255;172m`[38;2;0;255;178m-[38;2;0;255;185m-[38;2;0;255;191m-[38;2;0;255;198m-[38;2;0;255;204m'[38;2;0;255;210m [38;2;0;255;217m [38;2;0;255;223m`[38;2;0;255;229m-[38;2;0;255;236m-[38;2;0;255;242m-[38;2;0;255;249m'[38;2;0;255;255m [38;2;0;249;255m`[38;2;0;242;255m-[38;2;0;236;255m'[38;2;0;230;255m [38;2;0;223;255m [38;2;0;217;255m`[38;2;0;210;255m-[38;2;0;204;255m'[38;2;0;198;255m`[38;2;0;191;255m-[38;2;0;185;255m'[38;2;0;179;255m [38;2;0;172;255m`[38;2;0;166;255m-[38;2;0;159;255m'[0m
+[38;2;0;255;0mT[38;2;0;255;6mh[38;2;0;255;13me[38;2;0;255;19m [38;2;0;255;25mM[38;2;0;255;32mo[38;2;0;255;38md[38;2;0;255;45me[38;2;0;255;51mr[38;2;0;255;57mn[38;2;0;255;64m [38;2;0;255;70mD[38;2;0;255;76ma[38;2;0;255;83my[38;2;0;255;89m [38;2;0;255;96mP[38;2;0;255;102mo[38;2;0;255;108mr[38;2;0;255;115mt[38;2;0;255;121m [38;2;0;255;127mS[38;2;0;255;134mc[38;2;0;255;140ma[38;2;0;255;147mn[38;2;0;255;153mn[38;2;0;255;159me[38;2;0;255;166mr[38;2;0;255;172m.[0m[0m
+[1m[38;2;255;255;0m_[38;2;249;255;0m_[38;2;242;255;0m_[38;2;236;255;0m_[38;2;230;255;0m_[38;2;223;255;0m_[38;2;217;255;0m_[38;2;210;255;0m_[38;2;204;255;0m_[38;2;198;255;0m_[38;2;191;255;0m_[38;2;185;255;0m_[38;2;179;255;0m_[38;2;172;255;0m_[38;2;166;255;0m_[38;2;159;255;0m_[38;2;153;255;0m_[38;2;147;255;0m_[38;2;140;255;0m_[38;2;134;255;0m_[38;2;128;255;0m_[38;2;121;255;0m_[38;2;115;255;0m_[38;2;108;255;0m_[38;2;102;255;0m_[38;2;96;255;0m_[38;2;89;255;0m_[38;2;83;255;0m_[38;2;77;255;0m_[38;2;70;255;0m_[38;2;64;255;0m_[38;2;57;255;0m_[38;2;51;255;0m_[38;2;45;255;0m_[38;2;38;255;0m_[38;2;32;255;0m_[38;2;26;255;0m_[38;2;19;255;0m_[38;2;13;255;0m_[38;2;6;255;0m_[0m
+[38;2;255;255;0m:[38;2;249;255;0m [38;2;242;255;0mh[38;2;236;255;0mt[38;2;230;255;0mt[38;2;223;255;0mp[38;2;217;255;0ms[38;2;210;255;0m:[38;2;204;255;0m/[38;2;198;255;0m/[38;2;191;255;0md[38;2;185;255;0mi[38;2;179;255;0ms[38;2;172;255;0mc[38;2;166;255;0mo[38;2;159;255;0mr[38;2;153;255;0md[38;2;147;255;0m.[38;2;140;255;0mg[38;2;134;255;0mg[38;2;128;255;0m/[38;2;121;255;0mG[38;2;115;255;0mF[38;2;108;255;0mr[38;2;102;255;0mQ[38;2;96;255;0ms[38;2;89;255;0mG[38;2;83;255;0my[38;2;77;255;0m [38;2;70;255;0m [38;2;64;255;0m [38;2;57;255;0m [38;2;51;255;0m [38;2;45;255;0m [38;2;38;255;0m [38;2;32;255;0m [38;2;26;255;0m [38;2;19;255;0m [38;2;13;255;0m [38;2;6;255;0m:[0m
+[38;2;255;255;0m:[38;2;249;255;0m [38;2;242;255;0mh[38;2;236;255;0mt[38;2;230;255;0mt[38;2;223;255;0mp[38;2;217;255;0ms[38;2;210;255;0m:[38;2;204;255;0m/[38;2;198;255;0m/[38;2;191;255;0mg[38;2;185;255;0mi[38;2;179;255;0mt[38;2;172;255;0mh[38;2;166;255;0mu[38;2;159;255;0mb[38;2;153;255;0m.[38;2;147;255;0mc[38;2;140;255;0mo[38;2;134;255;0mm[38;2;128;255;0m/[38;2;121;255;0mR[38;2;115;255;0mu[38;2;108;255;0ms[38;2;102;255;0mt[38;2;96;255;0mS[38;2;89;255;0mc[38;2;83;255;0ma[38;2;77;255;0mn[38;2;70;255;0m/[38;2;64;255;0mR[38;2;57;255;0mu[38;2;51;255;0ms[38;2;45;255;0mt[38;2;38;255;0mS[38;2;32;255;0mc[38;2;26;255;0ma[38;2;19;255;0mn[38;2;13;255;0m [38;2;6;255;0m:[0m
+[38;2;255;255;0m [38;2;249;255;0m-[38;2;242;255;0m-[38;2;236;255;0m-[38;2;230;255;0m-[38;2;223;255;0m-[38;2;217;255;0m-[38;2;210;255;0m-[38;2;204;255;0m-[38;2;198;255;0m-[38;2;191;255;0m-[38;2;185;255;0m-[38;2;179;255;0m-[38;2;172;255;0m-[38;2;166;255;0m-[38;2;159;255;0m-[38;2;153;255;0m-[38;2;147;255;0m-[38;2;140;255;0m-[38;2;134;255;0m-[38;2;128;255;0m-[38;2;121;255;0m-[38;2;115;255;0m-[38;2;108;255;0m-[38;2;102;255;0m-[38;2;96;255;0m-[38;2;89;255;0m-[38;2;83;255;0m-[38;2;77;255;0m-[38;2;70;255;0m-[38;2;64;255;0m-[38;2;57;255;0m-[38;2;51;255;0m-[38;2;45;255;0m-[38;2;38;255;0m-[38;2;32;255;0m-[38;2;26;255;0m-[38;2;19;255;0m-[38;2;13;255;0m-[0m[0m
+Nmap? More like slowmap.🐢
+
+[1;34m[~][0m The config file is expected to be at "/root/.rustscan.toml"
+[1;34m[~][0m File limit higher than batch size. Can increase speed by increasing batch size '-b 924'.
+Open 10.150.150.219:21
+Open 10.150.150.219:25
+Open 10.150.150.219:79
+Open 10.150.150.219:80
+Open 10.150.150.219:105
+Open 10.150.150.219:106
+Open 10.150.150.219:110
+Open 10.150.150.219:135
+Open 10.150.150.219:139
+Open 10.150.150.219:143
+Open 10.150.150.219:443
+Open 10.150.150.219:445
+Open 10.150.150.219:554
+Open 10.150.150.219:5672
+Open 10.150.150.219:8009
+Open 10.150.150.219:8080
+Open 10.150.150.219:8089
+Open 10.150.150.219:8161
+Open 10.150.150.219:10243
+Open 10.150.150.219:49152
+Open 10.150.150.219:49153
+Open 10.150.150.219:49154
+Open 10.150.150.219:49155
+Open 10.150.150.219:49156
+Open 10.150.150.219:49157
+Open 10.150.150.219:49251
+[1;34m[~][0m Starting Script(s)
+[1;38;2;0;255;9m[>][0m Script to be run Some("nmap -vvv -p {{port}} {{ip}}")
+
+[1;34m[~][0m Starting Nmap 7.91 ( https://nmap.org ) at 2021-02-25 22:42 WAT
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 22:42
+Completed NSE at 22:42, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 22:42
+Completed NSE at 22:42, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 22:42
+Completed NSE at 22:42, 0.00s elapsed
+Initiating Ping Scan at 22:42
+Scanning 10.150.150.219 [4 ports]
+Completed Ping Scan at 22:42, 0.47s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 22:42
+Completed Parallel DNS resolution of 1 host. at 22:42, 1.03s elapsed
+DNS resolution of 1 IPs took 1.03s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating SYN Stealth Scan at 22:42
+Scanning 10.150.150.219 [26 ports]
+Discovered open port 554/tcp on 10.150.150.219
+Discovered open port 8080/tcp on 10.150.150.219
+Discovered open port 21/tcp on 10.150.150.219
+Discovered open port 143/tcp on 10.150.150.219
+Discovered open port 80/tcp on 10.150.150.219
+Discovered open port 445/tcp on 10.150.150.219
+Discovered open port 135/tcp on 10.150.150.219
+Discovered open port 25/tcp on 10.150.150.219
+Discovered open port 139/tcp on 10.150.150.219
+Discovered open port 110/tcp on 10.150.150.219
+Discovered open port 443/tcp on 10.150.150.219
+Discovered open port 8161/tcp on 10.150.150.219
+Discovered open port 49153/tcp on 10.150.150.219
+Discovered open port 10243/tcp on 10.150.150.219
+Discovered open port 49152/tcp on 10.150.150.219
+Discovered open port 8089/tcp on 10.150.150.219
+Discovered open port 8009/tcp on 10.150.150.219
+Discovered open port 5672/tcp on 10.150.150.219
+Discovered open port 105/tcp on 10.150.150.219
+Discovered open port 49155/tcp on 10.150.150.219
+Discovered open port 49251/tcp on 10.150.150.219
+Discovered open port 106/tcp on 10.150.150.219
+Discovered open port 79/tcp on 10.150.150.219
+Discovered open port 49154/tcp on 10.150.150.219
+Discovered open port 49156/tcp on 10.150.150.219
+Discovered open port 49157/tcp on 10.150.150.219
+Completed SYN Stealth Scan at 22:42, 0.98s elapsed (26 total ports)
+Initiating Service scan at 22:42
+Scanning 26 services on 10.150.150.219
+Completed Service scan at 22:44, 123.40s elapsed (26 services on 1 host)
+Initiating OS detection (try #1) against 10.150.150.219
+Retrying OS detection (try #2) against 10.150.150.219
+Initiating Traceroute at 22:44
+Completed Traceroute at 22:44, 0.34s elapsed
+Initiating Parallel DNS resolution of 2 hosts. at 22:44
+Completed Parallel DNS resolution of 2 hosts. at 22:44, 2.11s elapsed
+DNS resolution of 2 IPs took 2.11s. Mode: Async [#: 1, OK: 0, NX: 2, DR: 0, SF: 0, TR: 2, CN: 0]
+NSE: Script scanning 10.150.150.219.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 22:44
+Completed NSE at 22:45, 19.59s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 22:45
+Completed NSE at 22:45, 8.09s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 22:45
+Completed NSE at 22:45, 0.00s elapsed
+Nmap scan report for 10.150.150.219
+Host is up, received echo-reply ttl 127 (0.22s latency).
+Scanned at 2021-02-25 22:42:31 WAT for 164s
+
+PORT      STATE SERVICE        REASON          VERSION
+21/tcp    open  ftp            syn-ack ttl 127 FileZilla ftpd 0.9.41 beta
+| ftp-syst: 
+|_  SYST: UNIX emulated by FileZilla
+25/tcp    open  smtp           syn-ack ttl 127 Mercury/32 smtpd (Mail server account Maiser)
+|_smtp-commands: localhost Hello nmap.scanme.org; ESMTPs are:, TIME, 
+79/tcp    open  finger         syn-ack ttl 127 Mercury/32 fingerd
+| finger: Login: Admin         Name: Mail System Administrator\x0D
+| \x0D
+|_[No profile information]\x0D
+80/tcp    open  http           syn-ack ttl 127 Apache httpd 2.4.34 ((Win32) OpenSSL/1.0.2o PHP/5.6.38)
+|_http-favicon: Unknown favicon MD5: 56F7C04657931F2D0B79371B2D6E9820
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38
+| http-title: Welcome to XAMPP
+|_Requested resource was http://10.150.150.219/dashboard/
+105/tcp   open  ph-addressbook syn-ack ttl 127 Mercury/32 PH addressbook server
+106/tcp   open  pop3pw         syn-ack ttl 127 Mercury/32 poppass service
+110/tcp   open  pop3           syn-ack ttl 127 Mercury/32 pop3d
+|_pop3-capabilities: EXPIRE(NEVER) TOP APOP USER UIDL
+135/tcp   open  msrpc          syn-ack ttl 127 Microsoft Windows RPC
+139/tcp   open  netbios-ssn    syn-ack ttl 127 Microsoft Windows netbios-ssn
+143/tcp   open  imap           syn-ack ttl 127 Mercury/32 imapd 4.62
+|_imap-capabilities: IMAP4rev1 complete CAPABILITY OK X-MERCURY-1A0001 AUTH=PLAIN
+443/tcp   open  ssl/http       syn-ack ttl 127 Apache httpd 2.4.34 ((Win32) OpenSSL/1.0.2o PHP/5.6.38)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38
+| http-title: Welcome to XAMPP
+|_Requested resource was https://10.150.150.219/dashboard/
+| ssl-cert: Subject: commonName=localhost
+| Issuer: commonName=localhost
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2009-11-10T23:48:47
+| Not valid after:  2019-11-08T23:48:47
+| MD5:   a0a4 4cc9 9e84 b26f 9e63 9f9e d229 dee0
+| SHA-1: b023 8c54 7a90 5bfa 119c 4e8b acca eacf 3649 1ff6
+| -----BEGIN CERTIFICATE-----
+| MIIBnzCCAQgCCQC1x1LJh4G1AzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDEwls
+| b2NhbGhvc3QwHhcNMDkxMTEwMjM0ODQ3WhcNMTkxMTA4MjM0ODQ3WjAUMRIwEAYD
+| VQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMEl0yfj
+| 7K0Ng2pt51+adRAj4pCdoGOVjx1BmljVnGOMW3OGkHnMw9ajibh1vB6UfHxu463o
+| J1wLxgxq+Q8y/rPEehAjBCspKNSq+bMvZhD4p8HNYMRrKFfjZzv3ns1IItw46kgT
+| gDpAl1cMRzVGPXFimu5TnWMOZ3ooyaQ0/xntAgMBAAEwDQYJKoZIhvcNAQEFBQAD
+| gYEAavHzSWz5umhfb/MnBMa5DL2VNzS+9whmmpsDGEG+uR0kM1W2GQIdVHHJTyFd
+| aHXzgVJBQcWTwhp84nvHSiQTDBSaT6cQNQpvag/TaED/SEQpm0VqDFwpfFYuufBL
+| vVNbLkKxbK2XwUvu0RxoLdBMC/89HqrZ0ppiONuQ+X2MtxE=
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+445/tcp   open  microsoft-ds   syn-ack ttl 127 Windows 7 Ultimate 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)
+554/tcp   open  rtsp?          syn-ack ttl 127
+5672/tcp  open  amqp?          syn-ack ttl 127
+|_amqp-info: ERROR: AMQP:handshake connection closed unexpectedly while reading frame header
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GetRequest, HTTPOptions, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NCP, NotesRPC, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, WMSRequest, X11Probe, afp, giop, ms-sql-s, oracle-tns: 
+|_    AMQP
+8009/tcp  open  ajp13          syn-ack ttl 127 Apache Jserv (Protocol v1.3)
+|_ajp-methods: Failed to get a valid response for the OPTION request
+8080/tcp  open  http           syn-ack ttl 127 Apache Tomcat/Coyote JSP engine 1.1
+|_http-favicon: Apache Tomcat
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache-Coyote/1.1
+|_http-title: Apache Tomcat/7.0.56
+8089/tcp  open  ssl/http       syn-ack ttl 127 Splunkd httpd
+| http-methods: 
+|_  Supported Methods: GET HEAD
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Splunkd
+|_http-title: splunkd
+| ssl-cert: Subject: commonName=SplunkServerDefaultCert/organizationName=SplunkUser
+| Issuer: commonName=SplunkCommonCA/organizationName=Splunk/stateOrProvinceName=CA/countryName=US/emailAddress=support@splunk.com/localityName=San Francisco
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2019-10-28T09:17:32
+| Not valid after:  2022-10-27T09:17:32
+| MD5:   34d4 9be3 d6fd 5896 d091 86e6 436b 217b
+| SHA-1: 3e84 22d1 37ac 3526 a8a2 9f08 bb4f 8a92 a4f2 13dd
+| -----BEGIN CERTIFICATE-----
+| MIIDMjCCAhoCCQDqWCIRxqVgYjANBgkqhkiG9w0BAQsFADB/MQswCQYDVQQGEwJV
+| UzELMAkGA1UECAwCQ0ExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xDzANBgNVBAoM
+| BlNwbHVuazEXMBUGA1UEAwwOU3BsdW5rQ29tbW9uQ0ExITAfBgkqhkiG9w0BCQEW
+| EnN1cHBvcnRAc3BsdW5rLmNvbTAeFw0xOTEwMjgwOTE3MzJaFw0yMjEwMjcwOTE3
+| MzJaMDcxIDAeBgNVBAMMF1NwbHVua1NlcnZlckRlZmF1bHRDZXJ0MRMwEQYDVQQK
+| DApTcGx1bmtVc2VyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8iLN
+| pLvu7ZofVOtOaNt1mNOq633FLJPoX3H8Cbz9BKvhA0nreA3BJnL79XIeXyydNMGe
+| CHAB9ZQq6utOSpAwbjxyleVgYayno5ZzRhyYP8ODRIJcJum+XlgLjoDCdShi5bmS
+| PjSPLWJzBvDH6CPEbfEvogGyDShwM8regS+qW9V26c5udDaRwTGfPAU4cq/DN7LJ
+| M+EA3qORdahTf5nfZSNx/Tun9epYQCocilHERtRa/fYgLnBr6ZJZ4Z7QXwGA+fmZ
+| ZG0t0u3MUiuIcdrIGy8QGw8DeUEApgcAbnTXGqwAUA/XJeu0wy7zpVHBl8PZIGCj
+| jOkYrwwTafTWjMeD3wIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAj21h6n3HNKwV9
+| 9VCfcQHBfl4QcypQm41FddN85bowldxKPgqRIrw81grA6J6apERg4yuMB+Ri+BiC
+| cmyGOi6IijlDcyfTNOv5Rg2Ks/sA6R4JCbs9E6uiJuTLu7hsrJisIP2U/eDboK4r
+| 9CQ5QZe20H2Ik3mfReMKWlkeh145/GVyBt+vsTXHIxCN+YHbJU8xSE+JtsfTJXHv
+| VJVTGXhiBi//uJEsIvzLDi2rLXp0yJUKmWpox0ocdUZIOR57SGnsgIlqOD2NTXtt
+| h3JAMX1pOgRCj3e5kachGqEmgVSt0TvjY4DZ1royNfYalx3DEDS/Dye8TtRmnw+y
+| FS2JOiCL
+|_-----END CERTIFICATE-----
+8161/tcp  open  http           syn-ack ttl 127 Jetty 8.1.16.v20140903
+|_http-favicon: Unknown favicon MD5: 05664FB0C7AFCD6436179437E31F3AA6
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: Jetty(8.1.16.v20140903)
+|_http-title: Apache ActiveMQ
+10243/tcp open  http           syn-ack ttl 127 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49152/tcp open  msrpc          syn-ack ttl 127 Microsoft Windows RPC
+49153/tcp open  msrpc          syn-ack ttl 127 Microsoft Windows RPC
+49154/tcp open  msrpc          syn-ack ttl 127 Microsoft Windows RPC
+49155/tcp open  msrpc          syn-ack ttl 127 Microsoft Windows RPC
+49156/tcp open  msrpc          syn-ack ttl 127 Microsoft Windows RPC
+49157/tcp open  msrpc          syn-ack ttl 127 Microsoft Windows RPC
+49251/tcp open  tcpwrapped     syn-ack ttl 127
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5672-TCP:V=7.91%I=7%D=2/25%Time=603819D5%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,8,"AMQP\0\x01\0\0")%r(HTTPOptions,8,"AMQP\0\x01\0\0")%r(RTSPRe
+SF:quest,8,"AMQP\0\x01\0\0")%r(RPCCheck,8,"AMQP\0\x01\0\0")%r(DNSVersionBi
+SF:ndReqTCP,8,"AMQP\0\x01\0\0")%r(DNSStatusRequestTCP,8,"AMQP\0\x01\0\0")%
+SF:r(SSLSessionReq,8,"AMQP\0\x01\0\0")%r(TerminalServerCookie,8,"AMQP\0\x0
+SF:1\0\0")%r(TLSSessionReq,8,"AMQP\0\x01\0\0")%r(Kerberos,8,"AMQP\0\x01\0\
+SF:0")%r(SMBProgNeg,8,"AMQP\0\x01\0\0")%r(X11Probe,8,"AMQP\0\x01\0\0")%r(F
+SF:ourOhFourRequest,8,"AMQP\0\x01\0\0")%r(LPDString,8,"AMQP\0\x01\0\0")%r(
+SF:LDAPSearchReq,8,"AMQP\0\x01\0\0")%r(LDAPBindReq,8,"AMQP\0\x01\0\0")%r(S
+SF:IPOptions,8,"AMQP\0\x01\0\0")%r(LANDesk-RC,8,"AMQP\0\x01\0\0")%r(Termin
+SF:alServer,8,"AMQP\0\x01\0\0")%r(NCP,8,"AMQP\0\x01\0\0")%r(NotesRPC,8,"AM
+SF:QP\0\x01\0\0")%r(WMSRequest,8,"AMQP\0\x01\0\0")%r(oracle-tns,8,"AMQP\0\
+SF:x01\0\0")%r(ms-sql-s,8,"AMQP\0\x01\0\0")%r(afp,8,"AMQP\0\x01\0\0")%r(gi
+SF:op,8,"AMQP\0\x01\0\0");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows 7 or Windows Server 2008 R2 (97%), Microsoft Windows Home Server 2011 (Windows Server 2008 R2) (96%), Microsoft Windows Server 2008 SP1 (96%), Microsoft Windows Server 2008 SP2 (96%), Microsoft Windows Server 2008 SP2 or Windows 10 or Xbox One (96%), Microsoft Windows 7 (96%), Microsoft Windows 7 SP0 - SP1 or Windows Server 2008 (96%), Microsoft Windows 7 SP0 - SP1, Windows Server 2008 SP1, Windows Server 2008 R2, Windows 8, or Windows 8.1 Update 1 (96%), Microsoft Windows 7 SP1 (96%), Microsoft Windows 7 Ultimate (96%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=2/25%OT=21%CT=%CU=38433%PV=Y%DS=2%DC=T%G=N%TM=60381A6B%P=x86_64-pc-linux-gnu)
+SEQ(SP=106%GCD=1%ISR=109%TI=RD%CI=I%II=I%TS=A)
+SEQ(SP=107%GCD=1%ISR=108%TI=I%II=I%TS=7)
+OPS(O1=M54DNW8ST11%O2=M54DNW8ST11%O3=M54DNW8NNT11%O4=M54DNW8ST11%O5=M54DNW8ST11%O6=M54DST11)
+WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)
+ECN(R=Y%DF=Y%T=80%W=2000%O=M54DNW8NNS%CC=N%Q=)
+T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=Y%T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=80%CD=Z)
+
+Uptime guess: 0.075 days (since Thu Feb 25 20:56:36 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: Hosts: localhost, HOLLYWOOD; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1h46m34s, deviation: 4h37m05s, median: 53m24s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 47056/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 48385/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 26574/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 12363/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 7 Ultimate 7601 Service Pack 1 (Windows 7 Ultimate 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1
+|   Computer name: Hollywood
+|   NetBIOS computer name: HOLLYWOOD\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-02-26T06:38:15+08:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-02-25T22:38:17
+|_  start_date: 2020-04-02T14:13:04
+
+TRACEROUTE (using port 554/tcp)
+HOP RTT       ADDRESS
+1   325.71 ms 10.66.66.1
+2   324.71 ms 10.150.150.219
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 22:45
+Completed NSE at 22:45, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 22:45
+Completed NSE at 22:45, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 22:45
+Completed NSE at 22:45, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 164.99 seconds
+           Raw packets sent: 82 (5.692KB) | Rcvd: 94 (21.973KB)
+

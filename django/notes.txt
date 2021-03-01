@@ -1,0 +1,22 @@
+--interesting
+phpinfo() discolosure on the webpage
+Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38
+
+--information
+SYSTEM: Windows NT DJANGO 6.1 build 7601 (Windows 7 Home Basic Edition Service Pack 1) i586
+COMPUTERNAME: DJANGO
+ARCHITECTURE: x86
+USERNAME: chuck.norris
+
+--ftp vulnerabilities
+it is susceptible to ftp directory traversal and i can read all the files on the filesystem
+i got the credentials for phpmyadmin in C:\\xampp\passwords.txt
+
+--credentials
+ftp -  anonymous login
+phpmyadmin - root:thebarrierbetween
+
+--system users
+chuck.norris
+rambo
+

@@ -1,0 +1,20 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.150.150.219
++ Target Hostname:    10.150.150.219
++ Target Port:        8161
++ Start Time:         2021-02-25 22:45:01 (GMT1)
+---------------------------------------------------------------------------
++ Server: Jetty(8.1.16.v20140903)
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Default account found for 'ActiveMQRealm' at /lsJZvp1D.action (ID 'admin', PW 'admin'). Generic account discovered..
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Jetty/8.1.16.v20140903 appears to be outdated (current is at least 9.3.6.v20151106). Jetty 9.2.14.v20151106, 8.1.17.v20150415 and 7.6.17.v20150415 are also current.
++ Cookie JSESSIONID created without the httponly flag
++ OSVDB-3092: /admin/: This might be interesting...
++ Scan terminated:  6 error(s) and 7 item(s) reported on remote host
++ End Time:           2021-02-26 00:02:32 (GMT1) (4651 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

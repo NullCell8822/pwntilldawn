@@ -1,0 +1,37 @@
+# Nmap 7.91 scan initiated Wed Feb 24 07:21:26 2021 as: nmap -sS -sV -T4 -oN nmap/init 10.150.150.212
+Nmap scan report for 10.150.150.212
+Host is up (0.42s latency).
+Not shown: 986 closed ports
+PORT      STATE SERVICE      VERSION
+21/tcp    open  ftp
+80/tcp    open  http         Apache httpd 2.4.34 ((Win32) OpenSSL/1.0.2o PHP/5.6.38)
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http     Apache httpd 2.4.34 ((Win32) OpenSSL/1.0.2o PHP/5.6.38)
+445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: PWNTILLDAWN)
+3306/tcp  open  mysql        MariaDB (unauthorized)
+8089/tcp  open  ssl/http     Splunkd httpd
+49152/tcp open  msrpc        Microsoft Windows RPC
+49153/tcp open  msrpc        Microsoft Windows RPC
+49154/tcp open  msrpc        Microsoft Windows RPC
+49155/tcp open  msrpc        Microsoft Windows RPC
+49157/tcp open  msrpc        Microsoft Windows RPC
+49158/tcp open  msrpc        Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port21-TCP:V=7.91%I=7%D=2/24%Time=6035F071%P=x86_64-pc-linux-gnu%r(NULL
+SF:,35,"220-Wellcome\x20to\x20Home\x20Ftp\x20Server!\r\n220\x20Server\x20r
+SF:eady\.\r\n")%r(GenericLines,79,"220-Wellcome\x20to\x20Home\x20Ftp\x20Se
+SF:rver!\r\n220\x20Server\x20ready\.\r\n500\x20'\r':\x20command\x20not\x20
+SF:understood\.\r\n500\x20'\r':\x20command\x20not\x20understood\.\r\n")%r(
+SF:Help,5A,"220-Wellcome\x20to\x20Home\x20Ftp\x20Server!\r\n220\x20Server\
+SF:x20ready\.\r\n500\x20'HELP':\x20command\x20not\x20understood\.\r\n")%r(
+SF:SSLSessionReq,89,"220-Wellcome\x20to\x20Home\x20Ftp\x20Server!\r\n220\x
+SF:20Server\x20ready\.\r\n500\x20'\x16\x03\0\0S\x01\0\0O\x03\0\?G\xd7\xf7\
+SF:xba,\xee\xea\xb2`~\xf3\0\xfd\x82{\xb9\xd5\x96\xc8w\x9b\xe6\xc4\xdb<=\xd
+SF:bo\xef\x10n\0\0\(\0\x16\0\x13\0':\x20command\x20not\x20understood\.\r\n
+SF:")%r(SMBProgNeg,35,"220-Wellcome\x20to\x20Home\x20Ftp\x20Server!\r\n220
+SF:\x20Server\x20ready\.\r\n");
+Service Info: Hosts: Wellcome, DJANGO; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 24 07:22:38 2021 -- 1 IP address (1 host up) scanned in 71.37 seconds

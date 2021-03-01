@@ -1,0 +1,113 @@
+[1m[34m[*][0m Spooling to file msfconsole.log1...
+[4mmsf6[0m [0m> sear[K[K[K[Kspool msfconsole.log1[C[C[C[C[C[C[C[C[P[P[P[Pearch ftp bounce
+[0m
+Matching Modules
+================
+
+   #  Name                                  Disclosure Date  Rank    Check  Description
+   -  ----                                  ---------------  ----    -----  -----------
+   0  auxiliary/scanner/portscan/[45mftp[0m[45mbounce[0m                   normal  No     [45mFTP[0m [45mBounce[0m Port Scanner
+
+
+Interact with a module by name or index. For example [32minfo 0[0m, [32muse 0[0m or [32muse auxiliary/scanner/portscan/ftpbounce[0m
+
+[4mmsf6[0m [0m> use 0
+[0m[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> options
+[0m
+Module options (auxiliary/scanner/portscan/ftpbounce):
+
+   Name        Current Setting      Required  Description
+   ----        ---------------      --------  -----------
+   BOUNCEHOST                       yes       FTP relay host
+   BOUNCEPORT  21                   yes       FTP relay port
+   DELAY       0                    yes       The delay between connections, per thread, in milliseconds
+   FTPPASS     mozilla@example.com  no        The password for the specified username
+   FTPUSER     anonymous            no        The username to authenticate as
+   JITTER      0                    yes       The delay jitter factor (maximum value by which to +/- DELAY) in milliseconds.
+   PORTS       1-10000              yes       Ports to scan (e.g. 22-25,80,110-900)
+   RHOSTS                           yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   THREADS     1                    yes       The number of concurrent threads (max one per host)
+
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> set BOUNCEHOST 10.150.150.1[K212
+[0mBOUNCEHOST => 10.150.150.212
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> set PORTS 1-65535[K[K[K[K[K65535
+[0mPORTS => 1-65535
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> set THREADS 10
+[0mTHREADS => 10
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> show actions
+[0m
+Auxiliary actions:
+
+   Name  Description
+   ----  -----------
+
+
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> run
+[0m[1m[31m[-][0m Auxiliary failed: Msf::OptionValidateError One or more options failed to validate: RHOSTS.
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> set RHOSTS 10.150.150.212
+[0mRHOSTS => 10.150.150.212
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> RU[K[Krun
+[0m
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:1
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:2
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:3
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:4
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:5
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:6
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:7
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:8
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:9
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:10
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:11
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:12
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:13
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:14
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:15
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:16
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:17
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:18
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:19
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:20
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:21
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:22
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:23
+[1m[34m[*][0m 10.150.150.212:21 - Caught interrupt from the console...
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> options
+[0m
+Module options (auxiliary/scanner/portscan/ftpbounce):
+
+   Name        Current Setting      Required  Description
+   ----        ---------------      --------  -----------
+   BOUNCEHOST  10.150.150.212       yes       FTP relay host
+   BOUNCEPORT  21                   yes       FTP relay port
+   DELAY       0                    yes       The delay between connections, per thread, in milliseconds
+   FTPPASS     mozilla@example.com  no        The password for the specified username
+   FTPUSER     anonymous            no        The username to authenticate as
+   JITTER      0                    yes       The delay jitter factor (maximum value by which to +/- DELAY) in milliseconds.
+   PORTS       1-65535              yes       Ports to scan (e.g. 22-25,80,110-900)
+   RHOSTS      10.150.150.212       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   THREADS     10                   yes       The number of concurrent threads (max one per host)
+
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> options[P[P[P[Prunset RHOSTS 10.150.150.212run[Kshow actionset THREADS 10PORTS 1-65535BOUNCEHOST 10.150.150.212options[Kset BOUNCEHOST 10.150.150.212[K[K[K[K[K[K[K[K[K[K[K[K[K[Klocalhost
+[0mBOUNCEHOST => localhost
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> run
+[0m
+[1m[34m[*][0m localhost:21 - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> runset BOUNCEHOST localhost[K[K[K[K[K[K[K[K[K10.66.67.46
+[0mBOUNCEHOST => 10.66.67.46
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> run
+[0m
+[1m[34m[*][0m 10.66.67.46:21 - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> runset BOUNCEHOST 10.66.67.46run[Kset BOUNCEHOST localhostoptions[K[P[P[P[Prunset RHOSTS 10.150.150.212run[Kset RHOSTS 10.150.150.212run[Kshow actionset THREADS 10PORTS 1-65535BOUNCEHOST 10.150.150.212
+[0mBOUNCEHOST => 10.150.150.212
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> set BOUNCEHOST 10.150.150.212run[Kset BOUNCEHOST 10.66.67.46run[K
+[0m
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:1
+[1m[32m[+][0m 10.150.150.212:21 -  TCP OPEN 10.150.150.212:2
+[1m[34m[*][0m 10.150.150.212:21 - Caught interrupt from the console...
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf6[0m auxiliary([1m[31mscanner/portscan/ftpbounce[0m) [0m> exit
+[0m

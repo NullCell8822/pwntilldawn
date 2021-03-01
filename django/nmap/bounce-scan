@@ -1,0 +1,241 @@
+Hint: if your bounce scan target hosts aren't reachable from here, remember to use -Pn so we don't try and ping them prior to the scan
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-02-24 18:40 WAT
+Resolved FTP bounce attack proxy to 10.150.150.212 (10.150.150.212).
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 18:40
+Completed NSE at 18:40, 0.00s elapsed
+Initiating NSE at 18:40
+Completed NSE at 18:40, 0.00s elapsed
+Initiating NSE at 18:40
+Completed NSE at 18:40, 0.00s elapsed
+Initiating Ping Scan at 18:40
+Scanning 10.150.150.212 [4 ports]
+Completed Ping Scan at 18:40, 0.63s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 18:40
+Completed Parallel DNS resolution of 1 host. at 18:40, 1.23s elapsed
+Attempting connection to ftp://ftp:ftp@10.150.150.212:21
+Connected:220-Wellcome to Home Ftp Server!
+220 Server ready.
+Login credentials accepted by FTP server!
+Initiating Bounce Scan at 18:41
+Bounce Scan Timing: About 2.00% done; ETC: 19:06 (0:25:19 remaining)
+Discovered open port 49153/tcp on 10.150.150.212
+Discovered open port 49157/tcp on 10.150.150.212
+Discovered open port 49154/tcp on 10.150.150.212
+Bounce Scan Timing: About 14.20% done; ETC: 19:09 (0:23:58 remaining)
+Bounce Scan Timing: About 19.60% done; ETC: 19:09 (0:22:34 remaining)
+Bounce Scan Timing: About 24.90% done; ETC: 19:09 (0:21:07 remaining)
+Discovered open port 880/tcp on 10.150.150.212
+Bounce Scan Timing: About 25.40% done; ETC: 19:11 (0:22:43 remaining)
+Discovered open port 3300/tcp on 10.150.150.212
+Discovered open port 1010/tcp on 10.150.150.212
+Discovered open port 6389/tcp on 10.150.150.212
+Discovered open port 79/tcp on 10.150.150.212
+Discovered open port 50389/tcp on 10.150.150.212
+Discovered open port 4242/tcp on 10.150.150.212
+Discovered open port 1058/tcp on 10.150.150.212
+Discovered open port 2602/tcp on 10.150.150.212
+Discovered open port 42510/tcp on 10.150.150.212
+Discovered open port 6969/tcp on 10.150.150.212
+Discovered open port 30000/tcp on 10.150.150.212
+Discovered open port 27353/tcp on 10.150.150.212
+Discovered open port 7921/tcp on 10.150.150.212
+Discovered open port 8292/tcp on 10.150.150.212
+Discovered open port 9111/tcp on 10.150.150.212
+Discovered open port 5440/tcp on 10.150.150.212
+Discovered open port 32774/tcp on 10.150.150.212
+Discovered open port 44176/tcp on 10.150.150.212
+Discovered open port 3737/tcp on 10.150.150.212
+Discovered open port 1038/tcp on 10.150.150.212
+Discovered open port 2005/tcp on 10.150.150.212
+Discovered open port 24/tcp on 10.150.150.212
+Discovered open port 1072/tcp on 10.150.150.212
+Discovered open port 27352/tcp on 10.150.150.212
+Discovered open port 10616/tcp on 10.150.150.212
+Discovered open port 32769/tcp on 10.150.150.212
+Discovered open port 18101/tcp on 10.150.150.212
+Discovered open port 2046/tcp on 10.150.150.212
+Discovered open port 2383/tcp on 10.150.150.212
+Bounce Scan Timing: About 28.30% done; ETC: 19:10 (0:20:52 remaining)
+Discovered open port 8654/tcp on 10.150.150.212
+Discovered open port 3333/tcp on 10.150.150.212
+Discovered open port 40193/tcp on 10.150.150.212
+Discovered open port 5222/tcp on 10.150.150.212
+Discovered open port 27356/tcp on 10.150.150.212
+Discovered open port 7019/tcp on 10.150.150.212
+Discovered open port 2103/tcp on 10.150.150.212
+Discovered open port 10621/tcp on 10.150.150.212
+Discovered open port 2525/tcp on 10.150.150.212
+Discovered open port 5963/tcp on 10.150.150.212
+Discovered open port 1328/tcp on 10.150.150.212
+Discovered open port 2717/tcp on 10.150.150.212
+Discovered open port 6547/tcp on 10.150.150.212
+Discovered open port 5850/tcp on 10.150.150.212
+Discovered open port 666/tcp on 10.150.150.212
+Discovered open port 99/tcp on 10.150.150.212
+Discovered open port 987/tcp on 10.150.150.212
+Discovered open port 5510/tcp on 10.150.150.212
+Discovered open port 1050/tcp on 10.150.150.212
+Discovered open port 2875/tcp on 10.150.150.212
+Discovered open port 16113/tcp on 10.150.150.212
+Discovered open port 20005/tcp on 10.150.150.212
+Discovered open port 19842/tcp on 10.150.150.212
+Discovered open port 5405/tcp on 10.150.150.212
+Discovered open port 2048/tcp on 10.150.150.212
+Discovered open port 8082/tcp on 10.150.150.212
+Discovered open port 1296/tcp on 10.150.150.212
+Discovered open port 5987/tcp on 10.150.150.212
+Discovered open port 2323/tcp on 10.150.150.212
+Discovered open port 5544/tcp on 10.150.150.212
+Discovered open port 6543/tcp on 10.150.150.212
+Bounce Scan Timing: About 31.40% done; ETC: 19:09 (0:19:20 remaining)
+Our FTP proxy server hung up on us!  retrying
+Attempting connection to ftp://ftp:ftp@10.150.150.212:21
+Connected:220-Wellcome to Home Ftp Server!
+220 Server ready.
+Login credentials accepted by FTP server!
+Bounce Scan Timing: About 42.20% done; ETC: 19:12 (0:17:54 remaining)
+Bounce Scan Timing: About 48.30% done; ETC: 19:12 (0:16:19 remaining)
+Bounce Scan Timing: About 53.50% done; ETC: 19:12 (0:14:42 remaining)
+Bounce Scan Timing: About 58.40% done; ETC: 19:12 (0:13:05 remaining)
+Discovered open port 49155/tcp on 10.150.150.212
+Discovered open port 49152/tcp on 10.150.150.212
+Bounce Scan Timing: About 63.30% done; ETC: 19:12 (0:11:28 remaining)
+Discovered open port 49158/tcp on 10.150.150.212
+Bounce Scan Timing: About 68.20% done; ETC: 19:12 (0:09:51 remaining)
+Bounce Scan Timing: About 73.70% done; ETC: 19:12 (0:08:16 remaining)
+Bounce Scan Timing: About 78.80% done; ETC: 19:12 (0:06:40 remaining)
+Bounce Scan Timing: About 84.10% done; ETC: 19:13 (0:05:06 remaining)
+Bounce Scan Timing: About 89.30% done; ETC: 19:13 (0:03:27 remaining)
+Bounce Scan Timing: About 94.40% done; ETC: 19:13 (0:01:50 remaining)
+Discovered open port 8089/tcp on 10.150.150.212
+Discovered open port 20/tcp on 10.150.150.212
+Completed Bounce Scan at 19:13, 1938.52s elapsed (1000 total ports)
+Initiating Service scan at 19:13
+Scanning 69 services on 10.150.150.212
+Completed Service scan at 19:14, 63.60s elapsed (69 services on 1 host)
+NSE: Script scanning 10.150.150.212.
+Initiating NSE at 19:14
+Completed NSE at 19:14, 15.84s elapsed
+Initiating NSE at 19:14
+Completed NSE at 19:14, 1.44s elapsed
+Initiating NSE at 19:14
+Completed NSE at 19:14, 0.01s elapsed
+Nmap scan report for 10.150.150.212
+Host is up (0.63s latency).
+Not shown: 919 closed ports
+PORT      STATE    SERVICE        VERSION
+20/tcp    open     tcpwrapped
+24/tcp    open     tcpwrapped
+79/tcp    open     tcpwrapped
+|_finger: ERROR: Script execution failed (use -d to debug)
+89/tcp    filtered su-mit-tg
+99/tcp    open     tcpwrapped
+144/tcp   filtered news
+666/tcp   open     tcpwrapped
+880/tcp   open     tcpwrapped
+987/tcp   open     tcpwrapped
+1010/tcp  open     tcpwrapped
+1038/tcp  open     tcpwrapped
+1050/tcp  open     tcpwrapped
+|_giop-info: ERROR
+1058/tcp  open     tcpwrapped
+1072/tcp  open     tcpwrapped
+1080/tcp  unknown  socks
+1095/tcp  filtered nicelink
+1296/tcp  open     tcpwrapped
+1328/tcp  open     tcpwrapped
+2005/tcp  open     tcpwrapped
+2046/tcp  open     tcpwrapped
+2048/tcp  open     tcpwrapped
+2103/tcp  open     tcpwrapped
+2323/tcp  open     tcpwrapped
+2383/tcp  open     tcpwrapped
+2525/tcp  open     tcpwrapped
+2602/tcp  open     tcpwrapped
+2608/tcp  unknown  wag-service
+2717/tcp  open     tcpwrapped
+2875/tcp  open     tcpwrapped
+3300/tcp  open     tcpwrapped
+3333/tcp  open     tcpwrapped
+3737/tcp  open     tcpwrapped
+3995/tcp  filtered iss-mgmt-ssl
+4001/tcp  filtered newoak
+4242/tcp  open     tcpwrapped
+|_dicom-ping: ERROR: Script execution failed (use -d to debug)
+5222/tcp  open     tcpwrapped
+|_xmpp-info: ERROR: Script execution failed (use -d to debug)
+5405/tcp  open     tcpwrapped
+5440/tcp  open     tcpwrapped
+5510/tcp  open     tcpwrapped
+5544/tcp  open     tcpwrapped
+5850/tcp  open     tcpwrapped
+5963/tcp  open     tcpwrapped
+5987/tcp  open     tcpwrapped
+6389/tcp  open     tcpwrapped
+6543/tcp  open     tcpwrapped
+6547/tcp  open     tcpwrapped
+6969/tcp  open     tcpwrapped
+7019/tcp  open     tcpwrapped
+7921/tcp  open     tcpwrapped
+8082/tcp  open     tcpwrapped
+8089/tcp  open     ssl/http       Splunkd httpd
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Splunkd
+|_http-title: splunkd
+| ssl-cert: Subject: commonName=SplunkServerDefaultCert/organizationName=SplunkUser
+| Issuer: commonName=SplunkCommonCA/organizationName=Splunk/stateOrProvinceName=CA/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2019-10-29T14:31:26
+| Not valid after:  2022-10-28T14:31:26
+| MD5:   5d60 c8e6 37f3 eea2 1ca0 3cd3 bbae 8193
+|_SHA-1: 0c85 65c6 0e58 49e7 1882 b403 40f4 b521 6360 8ba9
+8292/tcp  open     tcpwrapped
+8654/tcp  open     tcpwrapped
+9080/tcp  filtered glrpc
+9111/tcp  open     tcpwrapped
+9968/tcp  filtered unknown
+10616/tcp open     tcpwrapped
+10621/tcp open     tcpwrapped
+12345/tcp unknown  netbus
+16113/tcp open     tcpwrapped
+18101/tcp open     tcpwrapped
+19842/tcp open     tcpwrapped
+20005/tcp open     tcpwrapped
+26214/tcp unknown  unknown
+27352/tcp open     tcpwrapped
+27353/tcp open     tcpwrapped
+27356/tcp open     tcpwrapped
+30000/tcp open     tcpwrapped
+32769/tcp open     tcpwrapped
+32770/tcp filtered sometimes-rpc3
+32774/tcp open     tcpwrapped
+40193/tcp open     tcpwrapped
+42510/tcp open     tcpwrapped
+44176/tcp open     tcpwrapped
+49152/tcp open     msrpc          Microsoft Windows RPC
+49153/tcp open     msrpc          Microsoft Windows RPC
+49154/tcp open     msrpc          Microsoft Windows RPC
+49155/tcp open     msrpc          Microsoft Windows RPC
+49157/tcp open     msrpc          Microsoft Windows RPC
+49158/tcp open     msrpc          Microsoft Windows RPC
+50389/tcp open     tcpwrapped
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+NSE: Script Post-scanning.
+Initiating NSE at 19:14
+Completed NSE at 19:14, 0.00s elapsed
+Initiating NSE at 19:14
+Completed NSE at 19:14, 0.00s elapsed
+Initiating NSE at 19:14
+Completed NSE at 19:14, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 2032.93 seconds
+           Raw packets sent: 4 (152B) | Rcvd: 1 (28B)
